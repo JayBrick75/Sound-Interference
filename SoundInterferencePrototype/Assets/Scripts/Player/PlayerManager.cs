@@ -35,6 +35,10 @@ public class PlayerManager : MonoBehaviour
                 genreManager.isRock = true;
                 Debug.Log("Rock Got");
                 return true;
+            case "Pop":
+                genreManager.isPop = true;
+                Debug.Log("Pop Got");
+                return true;
             case "Key":
                 Destroy(GameObject.FindGameObjectWithTag("Door"));
                 return true;
