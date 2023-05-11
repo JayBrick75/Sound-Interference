@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private int jumpCount;
     private bool facingRight = true;
     public Animator animator;
-
+    
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask whatIsEnemies;
