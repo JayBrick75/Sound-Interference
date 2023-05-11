@@ -39,6 +39,10 @@ public class PlayerManager : MonoBehaviour
                 genreManager.isPop = true;
                 Debug.Log("Pop Got");
                 return true;
+            case "Epic":
+                genreManager.isEpic = true;
+                Debug.Log("Epic Got");
+                return true;
             case "Key":
                 Destroy(GameObject.FindGameObjectWithTag("Door"));
                 return true;

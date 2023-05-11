@@ -12,6 +12,7 @@ TagManager:
   - Key
   - Door
   - Pop
+  - Epic
   layers:
   - Default
   - TransparentFX
