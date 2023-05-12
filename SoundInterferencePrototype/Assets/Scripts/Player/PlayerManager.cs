@@ -8,7 +8,6 @@ public class PlayerManager : MonoBehaviour
     public GenreManager genreManager;
     public int coinCount;
     public int playerHealth;
-    public SpriteRenderer Rock;
 
     void Start()
     {
@@ -42,6 +41,14 @@ public class PlayerManager : MonoBehaviour
             case "Epic":
                 genreManager.isEpic = true;
                 Debug.Log("Epic Got");
+                return true;
+            case "Jazz":
+                genreManager.isEpic = true;
+                Debug.Log("Jazz Got");
+                return true;
+            case "Electronic":
+                genreManager.isEpic = true;
+                Debug.Log("Electronic Got");
                 return true;
             case "Key":
                 Destroy(GameObject.FindGameObjectWithTag("Door"));
