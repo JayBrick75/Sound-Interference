@@ -13,20 +13,25 @@ public class BossAI : MonoBehaviour
     public int attackRange;
     public float speed;
     public Transform shotLocation;
+    public Transform shotLocation2;
     public float timer;
     public float cooldown;
+    public float jumpForce;
     public GameObject projectile;
-    
+    private Rigidbody2D rb;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        if (bossHealth < 7 && bossHealth > 4)
+        if (bossHealth < 5 && bossHealth > 0)
         {
             phase2 = true;
             attackRange = 6;
@@ -69,12 +74,18 @@ public class BossAI : MonoBehaviour
         {
             GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
             timer = 0;
-
-            if (phase2)
-            {
-                //GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
-                //timer = 0;
-            }
+        }
+        if (timer > cooldown && phase2)
+        {
+            GameObject clone = Instantiate(projectile, shotLocation2.position, transform.rotation);
+        }
+    }
+    public void ProjectileSlam()
+    {
+        if (phase2 && timer > cooldown)
+        {
+            rb.AddForce(new Vector2(0f, jumpForce));
+            timer = 0
         }
     }
 }
