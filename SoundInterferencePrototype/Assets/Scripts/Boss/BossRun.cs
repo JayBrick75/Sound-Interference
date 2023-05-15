@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossRun : MonoBehaviour
+public class BossRun : StateMachineBehaviour
 {
     Transform player;
     Rigidbody2D rb;
     BossAI bossAI;
     public float attackRange = 2f;
 
-    public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -18,7 +18,7 @@ public class BossRun : MonoBehaviour
         bossAI = animator.GetComponent<BossAI>();
     }
 
-    public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         bossAI.LookAtPlayer();
 
@@ -35,7 +35,7 @@ public class BossRun : MonoBehaviour
 
         if (distance < bossAI.attackRange && !bossAI.phase2)
         {
-            Debug.Log("Hit!!");
+            Debug.Log("Projectile Shot");
             animator.SetTrigger("Attack");
         }
         else if (distance < bossAI.attackRange && bossAI.phase2)
@@ -48,7 +48,7 @@ public class BossRun : MonoBehaviour
         }
     }
 
-    public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
 
     }

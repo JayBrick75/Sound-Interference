@@ -26,7 +26,22 @@ public class BossAI : MonoBehaviour
 
     void Update()
     {
-        
+        if (bossHealth < 7 && bossHealth > 4)
+        {
+            phase2 = true;
+            attackRange = 6;
+            speed = 3.5f;
+            Debug.Log("Phase2");
+        }
+        else if (bossHealth <= 0)
+        {
+            phase2 = false;
+            isDead = true;
+            Destroy(gameObject);
+            Debug.Log("The boss died :D");
+        }
+
+        timer += Time.deltaTime;
     }
 
     public void LookAtPlayer()
@@ -52,10 +67,13 @@ public class BossAI : MonoBehaviour
     {
         if (timer > cooldown)
         {
+            GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
+            timer = 0;
+
             if (phase2)
             {
-                GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
-                timer = 0;
+                //GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
+                //timer = 0;
             }
         }
     }
