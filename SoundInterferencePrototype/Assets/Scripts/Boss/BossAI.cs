@@ -85,7 +85,7 @@ public class BossAI : MonoBehaviour
         if (phase2 && timer > cooldown)
         {
             rb.AddForce(new Vector2(0f, jumpForce));
-            timer = 0
+            timer = 0;
         }
     }
 }
