@@ -41,6 +41,7 @@ public class BossRun : StateMachineBehaviour
         else if (distance < bossAI.attackRange && bossAI.phase2)
         {
             animator.SetTrigger("Phase2Attack");
+            animator.SetTrigger("Attack");
         }
         else if (bossAI.isDead)
         {

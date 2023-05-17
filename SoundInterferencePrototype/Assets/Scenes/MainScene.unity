@@ -653,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -151.68, y: -98.23, z: -10}
+  m_LocalPosition: {x: 145.1, y: -93.3, z: -10}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 577892675}
   m_Layer: 3
   m_Name: Arena Wall (L)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900464425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shot Location 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900464424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: -0.19, z: 0}
+  m_LocalPosition: {x: 0.58, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1393,7 +1393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138100174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shot Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138100173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.594, y: -0.14, z: 0}
+  m_LocalPosition: {x: -0.75, y: -0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1487,7 +1487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217531590}
   - component: {fileID: 1217531591}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arena Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1829,7 +1829,7 @@ GameObject:
   - component: {fileID: 1362669709}
   m_Layer: 0
   m_Name: Weapon
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1842,8 +1842,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362669707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09500003, y: 0.046044115, z: 0}
-  m_LocalScale: {x: 0.3662541, y: 0.24800754, z: 1}
+  m_LocalPosition: {x: 0.0868, y: 0.046044115, z: 0}
+  m_LocalScale: {x: 0.349936, y: 0.24800754, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2147270776}
@@ -2403,8 +2403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 3
-  enemyPop: 0
 --- !u!1 &1619071542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,9 +2670,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1654650714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arena
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3069,10 +3067,11 @@ GameObject:
   - component: {fileID: 1939790829}
   - component: {fileID: 1939790827}
   - component: {fileID: 1939790823}
-  - component: {fileID: 1939790828}
-  m_Layer: 0
+  - component: {fileID: 1939790830}
+  - component: {fileID: 1939790831}
+  m_Layer: 8
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,22 +3186,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &1939790828
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939790820}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.021974163, y: 0.020424385}
-  m_Size: {x: 1.1435523, y: 1.5036806}
-  m_Direction: 0
 --- !u!114 &1939790829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,16 +3200,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFlipped: 0
   bossHealth: 10
-  phase2: 1
+  phase2: 0
   isDead: 0
   attackRange: 10
   speed: 5
   shotLocation: {fileID: 1138100174}
   shotLocation2: {fileID: 900464425}
   timer: 0
-  cooldown: 5
+  cooldown: 3
   jumpForce: 300
   projectile: {fileID: 2382011103594102323, guid: 7ed5131f9be356646a8fb8bb2ede65cd, type: 3}
+--- !u!61 &1939790830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939790820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007732272, y: 0.0051561594}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1875, y: 1.5625}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1307983, y: 1.4697144}
+  m_EdgeRadius: 0
+--- !u!114 &1939790831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939790820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d26dfe4f8517840a277f09817b0e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1956319200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,7 +3583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069628834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -154.3, y: -79.1, z: -9.970385}
+  m_LocalPosition: {x: -125.23, y: -80.25, z: -9.970385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3652,7 +3674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147270774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -151.68, y: -98.23, z: 0}
+  m_LocalPosition: {x: 145.1, y: -93.3, z: 0}
   m_LocalScale: {x: 0.55510515, y: 0.62189704, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

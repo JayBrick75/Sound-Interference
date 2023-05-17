@@ -13,6 +13,9 @@ TagManager:
   - Door
   - Pop
   - Epic
+  - Wall
+  - Boss
+  - Weapon
   layers:
   - Default
   - TransparentFX

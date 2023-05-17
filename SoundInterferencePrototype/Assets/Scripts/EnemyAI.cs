@@ -4,30 +4,21 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public int health;
     public float speed;
     public bool enemyPop = false;
 
+    // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    // Update is called once per frame
     void Update()
     {
-        //transform.Translate(Vector2.left * speed * Time.deltaTime);
-        if (health < 0)
-        {
-            Destroy(gameObject);
-        }
-
         if (enemyPop)
         {
-        
+
         }
-    }
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
     }
 }

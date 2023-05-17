@@ -7,7 +7,7 @@ public class BossAI : MonoBehaviour
     Transform player;
     PlayerManager playerManager;
     public bool isFlipped;
-    public float bossHealth = 10f;
+    public int bossHealth;
     public bool phase2 = false;
     public bool isDead = false;
     public int attackRange;
@@ -31,7 +31,7 @@ public class BossAI : MonoBehaviour
 
     void Update()
     {
-        if (bossHealth < 5 && bossHealth > 0)
+        if (bossHealth < 6 && bossHealth > 0)
         {
             phase2 = true;
             attackRange = 6;
@@ -75,17 +75,22 @@ public class BossAI : MonoBehaviour
             GameObject clone = Instantiate(projectile, shotLocation.position, transform.rotation);
             timer = 0;
         }
-        if (timer > cooldown && phase2)
-        {
-            GameObject clone = Instantiate(projectile, shotLocation2.position, transform.rotation);
-        }
+        //if (timer > cooldown && phase2)
+        //{
+            //GameObject clone = Instantiate(projectile, shotLocation2.position, transform.rotation);
+        //}
     }
     public void ProjectileSlam()
     {
         if (phase2 && timer > cooldown)
-        {
+       {
             rb.AddForce(new Vector2(0f, jumpForce));
-            timer = 0
+            timer = 0;
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        bossHealth -= damage;
     }
 }

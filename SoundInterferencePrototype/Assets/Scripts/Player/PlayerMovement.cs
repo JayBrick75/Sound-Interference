@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
-            enemiesToDamage[i].GetComponent<EnemyAI>().TakeDamage(damage);
+            enemiesToDamage[i].GetComponent<EnemyHealth>().TakeDamage(damage);
 
             foreach (Collider2D enemy in enemiesToDamage)
             {
