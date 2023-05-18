@@ -16,6 +16,7 @@ TagManager:
   - Wall
   - Boss
   - Weapon
+  - Coin
   layers:
   - Default
   - TransparentFX
