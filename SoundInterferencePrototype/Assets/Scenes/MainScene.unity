@@ -2808,7 +2808,7 @@ GameObject:
   - component: {fileID: 245293732}
   - component: {fileID: 245293731}
   m_Layer: 0
-  m_Name: funny paper background (1)
+  m_Name: funny paper background 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2879,7 +2879,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262012232
 GameObject:
@@ -15380,7 +15380,7 @@ Transform:
   - {fileID: 287869689}
   - {fileID: 618254187}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956533861
 GameObject:
@@ -15945,7 +15945,7 @@ Transform:
   - {fileID: 730596605}
   - {fileID: 626927530}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975670621
 GameObject:
@@ -31474,7 +31474,7 @@ Transform:
   - {fileID: 725180954}
   - {fileID: 1383936823}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048940003
 GameObject:
@@ -32014,7 +32014,7 @@ Transform:
   m_Children:
   - {fileID: 1250510747}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070462485
 GameObject:
@@ -32920,7 +32920,7 @@ Transform:
   - {fileID: 1362669708}
   - {fileID: 1171850087}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2147270777
 MonoBehaviour:
