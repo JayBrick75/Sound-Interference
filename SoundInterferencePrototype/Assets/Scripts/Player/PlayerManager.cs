@@ -55,6 +55,7 @@ public class PlayerManager : MonoBehaviour
             case "Electronic":
                 genreManager.isEpic = true;
                 Debug.Log("Electronic Got");
+                GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(true);
                 return true;
             case "Key":
                 Destroy(GameObject.FindGameObjectWithTag("Door"));

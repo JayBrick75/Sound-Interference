@@ -21,6 +21,8 @@ TagManager:
   - Rock Door
   - Pop Key
   - Rock Key
+  - ElectricPlatform
+  - Electronic
   layers:
   - Default
   - TransparentFX

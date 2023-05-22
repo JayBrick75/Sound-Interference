@@ -42,7 +42,6 @@ public class GenreManager : MonoBehaviour
             Background.color = Color.magenta;
             playerMovement.moveSpeed = 6.0f;
             playerMovement.damage = 1;
-            //enemyAI.enemyPop = true;
             isRock = false;
             isEpic = false;
             isJazz = false;
