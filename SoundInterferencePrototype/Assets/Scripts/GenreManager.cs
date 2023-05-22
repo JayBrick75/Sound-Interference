@@ -59,10 +59,10 @@ public class GenreManager : MonoBehaviour
             isEpic = false;
             isElectronic = false;
         }
-        if (!isJazz)
-        {
-            playerMovement.maxJumpCount = 1;
-        }
+        //if (!isJazz)
+       // {
+             //playerMovement.maxJumpCount = 1;
+       // }
         if (isElectronic)
         {
             Background.color = Color.green;

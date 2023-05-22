@@ -30,13 +30,19 @@ public class PlayerManager : MonoBehaviour
             case "Coin":
                 coinCount++;
                 return true;
-            case "Rock":
+            case "Rock Key":
                 genreManager.isRock = true;
-                Debug.Log("Rock Got");
+                Debug.Log("Rock Key Got");
+                GameObject.FindGameObjectWithTag("Rock Door").SetActive(false);
                 return true;
             case "Pop":
                 genreManager.isPop = true;
                 Debug.Log("Pop Got");
+                return true;
+            case "Pop Key":
+                genreManager.isPop = true;
+                Debug.Log("Pop Key Got");
+                GameObject.FindGameObjectWithTag("Pop Door").SetActive(false);
                 return true;
             case "Epic":
                 genreManager.isEpic = true;

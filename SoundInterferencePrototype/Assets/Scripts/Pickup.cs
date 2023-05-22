@@ -21,6 +21,7 @@ public class Pickup : MonoBehaviour
                 if (pickedUp)
                 {
                     Destroy(gameObject);
+                    GetComponent<PlaySound>().Play();
                 }
             }
         }

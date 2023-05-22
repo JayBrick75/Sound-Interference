@@ -17,6 +17,10 @@ TagManager:
   - Boss
   - Weapon
   - Coin
+  - Pop Door
+  - Rock Door
+  - Pop Key
+  - Rock Key
   layers:
   - Default
   - TransparentFX
