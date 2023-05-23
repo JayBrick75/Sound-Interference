@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerMovement playerMovement;
     public GenreManager genreManager;
     public int coinCount;
-    public int playerHealth;
+    public int playerHealth = 7;
 
     void Start()
     {

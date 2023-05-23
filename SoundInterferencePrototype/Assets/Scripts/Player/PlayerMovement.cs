@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private int jumpCount;
     private bool facingRight = true;
     public Animator animator;
-    
+    public PlayerManager playerManager;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask whatIsEnemies;
@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
+        playerManager = GetComponent<PlayerManager>();
         jumpCount = maxJumpCount;
     }
 
@@ -139,10 +140,12 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Level 1 Ending")
         {
             transform.position = new Vector2(157.9f, 34.82f);
+            playerManager.playerHealth = 7;
         }
         if (collision.gameObject.tag == "Level 2 Ending")
         {
             transform.position = new Vector2(-146.7f, -89.65f);
+            playerManager.playerHealth = 7;
         }
         if (collision.gameObject.tag == "Barrier 1")
         {
