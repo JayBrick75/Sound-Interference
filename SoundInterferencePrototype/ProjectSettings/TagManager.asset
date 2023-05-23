@@ -23,6 +23,10 @@ TagManager:
   - Rock Key
   - ElectricPlatform
   - Electronic
+  - Rock Door 2
+  - Jazz Door
+  - Jazz
+  - Rock Key 2
   layers:
   - Default
   - TransparentFX
