@@ -13,9 +13,21 @@ public class GenreManager : MonoBehaviour
     public bool isEpic = false;
     public bool isJazz = false;
     public bool isElectronic = false;
+    //public AudioSource _AudioSource;
+    //public AudioClip _AudioClip1;
+    //public AudioClip _AudioClip2;
+    //public AudioClip _AudioClip3;
+    //public AudioClip _AudioClip4;
+    //public AudioClip _AudioClip5;
+    //public AudioClip _AudioClip6;
 
     void Start()
     {
+       // _AudioSource.clip = _AudioClip1;
+
+       // _AudioSource.Play();
+
+
         Background = GetComponent<SpriteRenderer>();
 
         playerManager = GetComponent<PlayerManager>();
@@ -36,6 +48,8 @@ public class GenreManager : MonoBehaviour
             isEpic = false;
             isJazz = false;
             isElectronic = false;
+            //_AudioSource.clip = _AudioClip2;
+            //_AudioSource.Play();
         }
         if (isPop)
         {
@@ -59,9 +73,9 @@ public class GenreManager : MonoBehaviour
             isElectronic = false;
         }
         //if (!isJazz)
-       // {
+        //{
              //playerMovement.maxJumpCount = 1;
-       // }
+        //}
         if (isElectronic)
         {
             Background.color = Color.green;

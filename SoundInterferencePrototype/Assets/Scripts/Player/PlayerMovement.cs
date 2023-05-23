@@ -71,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumping = true;
             jumpCount--;
-            jumpCount--;
         }
         else if (moveDirection < 0 && facingRight)
         {
@@ -135,5 +134,27 @@ public class PlayerMovement : MonoBehaviour
             transform.parent = null;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Level 1 Ending")
+        {
+            transform.position = new Vector2(157.9f, 34.82f);
+        }
+        if (collision.gameObject.tag == "Level 2 Ending")
+        {
+            transform.position = new Vector2(-146.7f, -89.65f);
+        }
+        if (collision.gameObject.tag == "Barrier 1")
+        {
+            transform.position = new Vector2(-97.54f, 16.5f);
+        }
+        if (collision.gameObject.tag == "Barrier 2")
+        {
+            transform.position = new Vector2(157.9f, 34.82f);
+        }
+        if (collision.gameObject.tag == "Barrier 3")
+        {
+            transform.position = new Vector2(-146.7f, -89.65f);
+        }
+    }
 }

@@ -43,6 +43,7 @@ public class PlayerManager : MonoBehaviour
                 genreManager.isRock = true;
                 Debug.Log("Rock Key 2 Got");
                 GameObject.FindGameObjectWithTag("Rock Door 2").SetActive(false);
+                GameObject.FindGameObjectWithTag("Rock Door 2").SetActive(false);
                 return true;
             case "Pop":
                 genreManager.isPop = true;
@@ -62,10 +63,12 @@ public class PlayerManager : MonoBehaviour
                 Debug.Log("Jazz Got");
                 GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
                 GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
+                GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
                 return true;
             case "Electronic":
                 genreManager.isEpic = true;
                 Debug.Log("Electronic Got");
+                GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);
                 GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);
                 GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);
                 GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);

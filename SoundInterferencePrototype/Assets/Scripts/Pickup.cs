@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    public bool isPlayed = false;
     void Start()
     {
 
@@ -20,8 +21,12 @@ public class Pickup : MonoBehaviour
                 bool pickedUp = manager.PickupItem(gameObject);
                 if (pickedUp)
                 {
-                    Destroy(gameObject);
                     GetComponent<PlaySound>().Play();
+                    isPlayed = true;
+                    if (isPlayed)
+                    {
+                        Destroy(gameObject);
+                    }
                 }
             }
         }

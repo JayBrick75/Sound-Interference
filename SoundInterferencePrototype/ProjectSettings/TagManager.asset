@@ -27,6 +27,11 @@ TagManager:
   - Jazz Door
   - Jazz
   - Rock Key 2
+  - Level 1 Ending
+  - Level 2 Ending
+  - Barrier 1
+  - Barrier 2
+  - Barrier 3
   layers:
   - Default
   - TransparentFX
