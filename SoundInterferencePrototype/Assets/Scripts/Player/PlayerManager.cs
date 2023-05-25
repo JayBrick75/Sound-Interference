@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
         if (playerHealth <= 0)
         {
             Debug.Log("Player has died");
-            // Player Death
+            Destroy(gameObject);
         }
     }
     public bool PickupItem(GameObject obj)
@@ -86,6 +86,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.tag == "Spike" || collision.gameObject.tag == "Enemy")
         {
             playerHealth -= 1;
+            Debug.Log("Player Damaged");
         }
     }
 }

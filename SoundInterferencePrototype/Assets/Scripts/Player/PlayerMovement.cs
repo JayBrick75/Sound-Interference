@@ -141,11 +141,13 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector2(157.9f, 34.82f);
             playerManager.playerHealth = 7;
+            Debug.Log("Level 2, Health Reset");
         }
         if (collision.gameObject.tag == "Level 2 Ending")
         {
             transform.position = new Vector2(-146.7f, -89.65f);
             playerManager.playerHealth = 7;
+            Debug.Log("Level 3, Health Reset");
         }
         if (collision.gameObject.tag == "Barrier 1")
         {
