@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce));
             isGrounded = false;
-            jumpCount = 0;
+            jumpCount -= 1;
         }
         isJumping = false;
     }

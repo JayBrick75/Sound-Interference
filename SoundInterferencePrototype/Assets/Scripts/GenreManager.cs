@@ -32,6 +32,7 @@ public class GenreManager : MonoBehaviour
             Background.color = Color.red;
             playerMovement.moveSpeed = 7.5f;
             playerMovement.damage = 2;
+            playerMovement.maxJumpCount = 2;
             isPop = false;
             isEpic = false;
             isJazz = false;
@@ -71,6 +72,7 @@ public class GenreManager : MonoBehaviour
             Background.color = Color.yellow;
             playerMovement.moveSpeed = 5.5f;
             playerMovement.damage = 1;
+            playerMovement.maxJumpCount = 2;
             isRock = false;
             isPop = false;
             isJazz = false;

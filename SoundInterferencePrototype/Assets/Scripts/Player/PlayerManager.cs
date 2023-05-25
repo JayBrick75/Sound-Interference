@@ -32,41 +32,52 @@ public class PlayerManager : MonoBehaviour
                 return true;
             case "Rock":
                 genreManager.isRock = true;
+                genreManager.isPop = false;
                 Debug.Log("Rock Got");
                 return true;
             case "Rock Key":
                 genreManager.isRock = true;
+                genreManager.isPop = false;
                 Debug.Log("Rock Key Got");
                 GameObject.FindGameObjectWithTag("Rock Door").SetActive(false);
                 return true;
             case "Rock Key 2":
                 genreManager.isRock = true;
+                genreManager.isJazz = false;
+                genreManager.isElectronic = false;
                 Debug.Log("Rock Key 2 Got");
                 GameObject.FindGameObjectWithTag("Rock Door 2").SetActive(false);
                 GameObject.FindGameObjectWithTag("Rock Door 2").SetActive(false);
                 return true;
             case "Pop":
                 genreManager.isPop = true;
+                genreManager.isRock = false;
                 Debug.Log("Pop Got");
                 return true;
             case "Pop Key":
                 genreManager.isPop = true;
+                genreManager.isRock = false;
                 Debug.Log("Pop Key Got");
                 GameObject.FindGameObjectWithTag("Pop Door").SetActive(false);
                 return true;
             case "Epic":
                 genreManager.isEpic = true;
+                genreManager.isJazz = false;
+                genreManager.isRock = false;
                 Debug.Log("Epic Got");
                 return true;
             case "Jazz":
-                genreManager.isEpic = true;
+                genreManager.isJazz = true;
+                genreManager.isRock = false;
+                genreManager.isElectronic = false;
                 Debug.Log("Jazz Got");
                 GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
                 GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
                 GameObject.FindGameObjectWithTag("Jazz Door").SetActive(false);
                 return true;
             case "Electronic":
-                genreManager.isEpic = true;
+                genreManager.isElectronic = true;
+                genreManager.isRock = false;
                 Debug.Log("Electronic Got");
                 GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);
                 GameObject.FindGameObjectWithTag("ElectricPlatform").SetActive(false);
